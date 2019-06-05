@@ -10,7 +10,10 @@ export default new Router({
     {
       path: '/vietprivacy',
       name: 'vietprivacy',
-      component: VietPrivacy
+      component: VietPrivacy,
+      meta:{
+        title: 'Thỏa thuận bảo mật'
+      }
     }
   ]
 })
