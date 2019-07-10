@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import VietPrivacy from '../components/VietPrivacy'
 import IndonesPrivacy from '../components/IndonesPrivacy'
+import TemanPrivacy from '../components/TemanPrivacy'
 Vue.use(Router);
 
 export default new Router({
@@ -21,6 +22,14 @@ export default new Router({
       component: IndonesPrivacy,
       meta:{
         title: 'Perjanjian privasi'
+      }
+    },
+    {
+      path: '/temanprivacy',
+      name: 'temanprivacy',
+      component: TemanPrivacy,
+      meta:{
+        title: 'Teman privasi'
       }
     }
   ]
