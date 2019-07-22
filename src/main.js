@@ -3,7 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Antd from 'ant-design-vue';
+import {Collapse} from 'ant-design-vue/lib/collapse'
+// import 'element-ui/lib/theme-chalk/index.css';
+import 'ant-design-vue/dist/antd.css'
 
+// Vue.component(CollapseItem.name,CollapseItem);
+Vue.use(Antd)
 Vue.config.productionTip = false
 
 

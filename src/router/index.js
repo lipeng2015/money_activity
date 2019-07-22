@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import VietPrivacy from '../components/VietPrivacy'
 import IndonesPrivacy from '../components/IndonesPrivacy'
 import TemanPrivacy from '../components/TemanPrivacy'
+import HelpCenter from '../components/HelpCenter'
 Vue.use(Router);
 
 export default new Router({
@@ -30,6 +31,14 @@ export default new Router({
       component: TemanPrivacy,
       meta:{
         title: 'Teman privasi'
+      }
+    },
+    {
+      path: '/helpcenter',
+      name: 'center_help',
+      component: HelpCenter,
+      meta:{
+        title: 'center help'
       }
     }
   ]
