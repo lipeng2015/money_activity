@@ -5,6 +5,7 @@ import VietPrivacy from '../components/VietPrivacy'
 import IndonesPrivacy from '../components/IndonesPrivacy'
 import TemanPrivacy from '../components/TemanPrivacy'
 import HelpCenter from '../components/HelpCenter'
+import PhiPrivacy from '../components/PhiPrivacy'
 Vue.use(Router);
 
 export default new Router({
@@ -39,6 +40,14 @@ export default new Router({
       component: HelpCenter,
       meta:{
         title: 'center help'
+      }
+    },
+    {
+      path: '/phiprivacy',
+      name: 'phiPrivacy',
+      component: PhiPrivacy,
+      meta:{
+        title: 'phi pravicy'
       }
     }
   ]
