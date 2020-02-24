@@ -6,6 +6,8 @@ import IndonesPrivacy from '../components/IndonesPrivacy'
 import TemanPrivacy from '../components/TemanPrivacy'
 import HelpCenter from '../components/HelpCenter'
 import PhiPrivacy from '../components/PhiPrivacy'
+import Home from '../components/Home';
+import appPrivacy from '../components/appPrivacy';
 Vue.use(Router);
 
 export default new Router({
@@ -19,9 +21,25 @@ export default new Router({
       }
     },
     {
+      path: '/',
+      name: 'home',
+      component: Home,
+      meta:{
+        title: '首页'
+      }
+    },
+    {
       path: '/indonesprivacy',
       name: 'indonesPrivacy',
       component: IndonesPrivacy,
+      meta:{
+        title: 'Perjanjian privasi'
+      }
+    },
+    {
+      path: '/appPrivacy',
+      name: 'appPrivacy',
+      component: appPrivacy,
       meta:{
         title: 'Perjanjian privasi'
       }
